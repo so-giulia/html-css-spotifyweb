@@ -1,30 +1,4 @@
-/* Debug - delete later */
-
-.debug main{
-    background-color: pink;
-    /* height:650px; */
-}
-
-.debug footer{
-    background-color: #282828;
-    height:150px;
-}
-
-.debug aside{
-    /* height: 650px; */
-    background-color: black;
-}
-
-.debug .main-content{
-    /* height: 650px; */
-    background-color: aqua;
-}
-
 /* Common */
-
-body{
-    font-family: 'Montserrat', sans-serif;
-}
 
 nav ul li{
     list-style:none;
@@ -44,6 +18,13 @@ nav ul li a:hover, .cta-profile a:hover{
 }
 
 /* Text */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.strong {font-weight:600;}
+.loud {text-transform: uppercase;}
 
 .caption{
     font-size:13px;
@@ -69,9 +50,8 @@ main aside{
     background:transparent url(../img/logo.svg) scroll no-repeat center ;
 }
 
-aside nav ul li{
+aside nav ul li, .horizontal-nav ul li{
     font-size:14px;
-    font-weight:600;
     line-height:30px;
 }
 
@@ -106,7 +86,6 @@ li.active{
 }
 
 .playlist-title{
-    text-transform: uppercase;
     color:#fff;
 }
 
@@ -117,8 +96,6 @@ li.active{
 .cta-profile{
     background-color: #000;
     width:100%;
-    font-weight:600;
-
 
     bottom:150px;
     left:0;
@@ -141,10 +118,41 @@ li.active{
     border-radius: 50%;
 }
 
+/* Main content */
+
+.main-content{
+    background-color: #141922;
+}
+
+.cta-bar{
+    width:calc((100% / 12) * 12);
+    height:100px;
+    background-color: rgba(0,0,0,0.5);
+
+
+    top:0;
+    right:0;
+    z-index:1;
+}
+
+.cta-btn{
+    border:1px solid white;
+    border-radius: 50px;
+}
+
+.cta-btn a, .cta-btn a:hover, .cta-btn a:active,
+.cta-btn a:visited, .cta-btn a:focus{
+    text-decoration: none;
+    color:#fff;
+}
+
 /* Footer */
 
 footer{
+    width:100%;
+    height:150px;
+    background-color: #282828;
+
     bottom:0;
     left:0;
-    width:100%;
 }

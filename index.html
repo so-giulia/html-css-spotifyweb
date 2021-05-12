@@ -23,7 +23,7 @@
     <!-- main start -->
     <main class="row">
         <!-- side nav col start -->
-        <aside class="row row-vert col-sm-3 debug">         
+        <aside class="row row-vert col-sm-2 debug">         
             <div class="container-fluid prelative">
                 <!-- logo start -->
                 <header class="row row-vert mb-15 p-15">
@@ -33,7 +33,7 @@
 
                 <!-- side nav start -->
                 <nav class="row row-vert main-nav mb-30">
-                    <ul>
+                    <ul class="strong">
                         <li class="mb-10 active">
                             <a href="#" class="row pl-special">
                                 <span class="nav-ico home-ico"></span>
@@ -60,8 +60,8 @@
 
                 <!-- playlist nav start -->
                 <nav class="playlist-nav row row-vert pl-15">
-                    <ul>
-                        <li class="playlist-title mb-10">
+                    <ul class="strong">
+                        <li class="playlist-title mb-10 loud">
                             Playlist
                         </li>
 
@@ -73,7 +73,7 @@
                         </li>
                     </ul>
 
-                    <ul class="pb-50">
+                    <ul class="strong pb-50">
                         <li class="mb-5"><a href="#">Nome Playlist</a></li>
                         <li class="mb-5"><a href="#">Nome Playlist</a></li>
                         <li class="mb-5"><a href="#">Nome Playlist</a></li>
@@ -86,8 +86,8 @@
                 <!-- playlist nav end -->
 
                 <!-- cta + profile start -->
-                <section class="cta-profile row col-sm-3 ib pt-15 pb-15 pl-15 pfixed">
-                    <div class="row install pb-10">
+                <section class="cta-profile row col-sm-2 ib pt-15 pb-15 pl-15 pfixed">
+                    <div class="row install pb-10 strong">
                         <span class="nav-ico install-ico mr-10"></span>
                         <span class="caption">
                             <a href="#">
@@ -96,7 +96,7 @@
                         </span>
                     </div>
 
-                    <div class="row profile pt-10">
+                    <div class="row profile pt-10 strong">
                         <span class="nav-ico propic-ico mr-10"></span>
                         <span class="username">John Doe</span>
                     </div>
@@ -107,10 +107,29 @@
         <!-- side nav col end -->
 
         <!-- main content start -->
-        <div class="row main-content col-sm-9">
-            <section>
-
+        <div class="row main-content col-sm-10 pt-120">
+            <!-- upgrade btn start -->
+            <section class="row col-xs-10 cta-bar pfixed justify-end align-center pr-15">
+                <span class="ib cta-btn pt-10 pr-30 pb-10 pl-30 strong loud">
+                    <a href="#">
+                        Effettua l'upgrade
+                    </a>
+                </span>
             </section>
+            <!-- upgrade btn end -->
+
+            <!-- menu start -->
+            <nav class="row col-xs-12 horizontal-nav">
+                <ul class="row basis-100 justify-center strong loud">
+                    <li class="mh-1p active"><a href="#">in evidenza</a></li>
+                    <li class="mh-1p"><a href="#">podcast</a></li>
+                    <li class="mh-1p"><a href="#">classifiche</a></li>
+                    <li class="mh-1p"><a href="#">generi e mood</a></li>
+                    <li class="mh-1p"><a href="#">nuove uscite</a></li>
+                    <li class="mh-1p"><a href="#">scopri</a></li>
+                </ul>
+            </nav>
+           <!-- menu end -->
         </div>
         <!-- main content end -->
     </main>
