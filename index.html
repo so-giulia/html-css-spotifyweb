@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Framework -->
-    <link rel="stylesheet" href="css/12bool.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+     <!-- Framework -->
+     <link rel="stylesheet" href="css/12bool.css">
 
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
     <title>Spotify Web | Replica</title>
@@ -17,19 +21,99 @@
 
 <body class="debug">
     <!-- main start -->
-    <main class="clearfix">
+    <main class="row">
         <!-- side nav col start -->
-        <aside class="fleft"></aside>
+        <aside class="row row-vert col-sm-3 debug">
+           
+            <div class="container-fluid prelative">
+                <!-- logo start -->
+                <header class="row row-vert mb-15 p-15">
+                    <div id="logo"></div>
+                </header>
+                <!-- logo end -->
+
+                <!-- side nav start -->
+                <nav class="row row-vert main-nav mb-30">
+                    <ul>
+                        <li class="mb-10 active">
+                            <a href="#" class="row pl-special">
+                                <span class="nav-ico home-ico"></span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="mb-10">
+                            <a href="#" class="row pl-15">
+                                <span class="nav-ico search-ico"></span>
+                                <span>Cerca</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="row pl-15">
+                                <span class="nav-ico lib-ico"></span>
+                                <span>La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- side nav end -->
+
+                <!-- playlist nav start -->
+                <nav class="playlist-nav row row-vert pl-15">
+                    <ul>
+                        <li class="playlist-title mb-10">
+                            Playlist
+                        </li>
+
+                        <li class="mb-10">
+                            <a href="#"> 
+                                <span class="nav-ico playlist-ico"></span>
+                                <span class="create-playlist">Crea Playlist</span>
+                            </a>
+                        </li>
+
+                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </nav>
+                <!-- playlist nav end -->
+
+                <!-- cta + profile start -->
+                <section class="cta-profile row col-sm-3 ib pb-15 pl-15 pfixed">
+                    <div class="install ib pb-10">
+                        <a class="row" href="#">
+                            <span class="nav-ico install-ico mr-10"></span>
+                            <span class="caption">Installa App</span>
+                        </a>
+                    </div>
+
+                    <div class="profile ib pt-10">
+                        <a class="row" href="#">
+                            <span class="nav-ico propic-ico mr-10"></span>
+                            <span class="username">John Doe</span>
+                        </a>
+                    </div>
+                </section>
+                <!-- cta + profile end -->
+           </div>
+                
+        </aside>
         <!-- side nav col end -->
 
         <!-- main content start -->
-        <div class="main-content fleft"></div>
+        <div class="row main-content col-sm-9"></div>
         <!-- main content end -->
     </main>
     <!-- main end -->
 
     <!-- foot start -->
-    <footer></footer>
+    <footer class="pfixed"></footer>
     <!-- foot end -->
 </body>
 </html>

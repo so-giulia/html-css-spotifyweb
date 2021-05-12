@@ -2,31 +2,156 @@
 
 .debug main{
     background-color: pink;
-    height:650px;
+    /* height:650px; */
 }
 
 .debug footer{
-    background-color: black;
+    background-color: #282828;
     height:100px;
 }
 
 .debug aside{
-    height: 650px;
-    background-color: grey;
+    /* height: 650px; */
+    background-color: black;
 }
 
 .debug .main-content{
-    height: 650px;
+    /* height: 650px; */
     background-color: aqua;
 }
 
+/* Common */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a, nav ul li a:active,
+nav ul li a:focus, nav ul li a:visited,
+.cta-profile a, .cta-profile a:active,
+.cta-profile a:focus, .cta-profile a:visited{
+    text-decoration:none;
+    color:#717171;
+}
+
+nav ul li a:hover{
+    text-decoration:none;
+    color:#fff;
+}
+
+/* Text */
+
+.caption{
+    font-size:13px;
+}
+
+.username{
+    font-size:16px;
+    color:#fff;
+}
 
 /* Main structure */
 
 main aside{
-    width:17%;
+    background-color: black;
+    height:100vh;
 }
 
-.main-content{
-    width:calc(100% - 17%);
+/* Aside */
+
+#logo{
+    width:130px;
+    height:50px;
+    background:transparent url(../img/logo.svg) scroll no-repeat center ;
+}
+
+aside nav ul li{
+    font-size:14px;
+    font-weight:600;
+    line-height:30px;
+}
+
+li.active{
+    border-left:3px solid #adff2f;
+}
+
+.pl-special{
+    padding-left:calc(15px - 3px);
+}
+
+.nav-ico{
+    flex-basis:20px;
+    margin-right:4px;
+}
+
+.home-ico {background:transparent url(../img/home.svg) scroll no-repeat center;}
+.search-ico {background:transparent url(../img/search.svg) scroll no-repeat center;}
+.lib-ico {background:transparent url(../img/libreria.svg) scroll no-repeat center;}
+
+.playlist-ico::before{
+    content:'\002B';
+    color:#000;
+    font-size:20px;
+    background-color: #a3a3a3;
+    padding:5px 10px;
+}
+
+.playlist-nav{
+    /* flex-basis:auto;
+    min-height: min-content;
+    overflow-y: auto; */
+}
+
+.playlist-nav ul{
+    min-height: min-content;
+    overflow-y: auto;
+    height:100%;
+}
+
+.playlist-title{
+    text-transform: uppercase;
+    color:#fff
+}
+
+.create-playlist{
+    font-size:16px;
+}
+
+.cta-profile{
+    background-color: #000;
+    width:100%;
+    font-weight:600;
+
+
+    bottom:100px;
+    left:0;
+}
+
+.install{
+    border-bottom:1px solid #6f6f6f;
+}
+
+.install, .profile{
+    width:calc(100% - 15px);
+}
+
+.install-ico{
+    background:transparent url(../img/download.svg) scroll no-repeat center;
+}
+
+.propic-ico{
+    background:#a3a3a3 url(../img/profile.svg) scroll no-repeat center;
+    border-radius: 50%;
+}
+
+/* Footer */
+
+footer{
+    bottom:0;
+    left:0;
+    width:100%;
 }
