@@ -38,7 +38,7 @@ nav ul li a:focus, nav ul li a:visited,
     color:#717171;
 }
 
-nav ul li a:hover{
+nav ul li a:hover, .cta-profile a:hover{
     text-decoration:none;
     color:#fff;
 }
