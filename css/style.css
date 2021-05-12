@@ -7,7 +7,7 @@
 
 .debug footer{
     background-color: #282828;
-    height:100px;
+    height:150px;
 }
 
 .debug aside{
@@ -100,11 +100,11 @@ li.active{
     padding:5px 10px;
 }
 
-.playlist-nav{
-    /* flex-basis:auto;
+/* .playlist-nav{
+    flex-basis:auto;
     min-height: min-content;
-    overflow-y: auto; */
-}
+    overflow-y: auto;
+} */
 
 .playlist-nav ul{
     min-height: min-content;
@@ -114,7 +114,7 @@ li.active{
 
 .playlist-title{
     text-transform: uppercase;
-    color:#fff
+    color:#fff;
 }
 
 .create-playlist{
@@ -127,7 +127,7 @@ li.active{
     font-weight:600;
 
 
-    bottom:100px;
+    bottom:150px;
     left:0;
 }
 
