@@ -58,7 +58,7 @@ nav ul li a:hover, .cta-profile a:hover{
 
 main aside{
     background-color: black;
-    height:100vh;
+    height:calc(100vh - 150px);
 }
 
 /* Aside */
@@ -100,16 +100,9 @@ li.active{
     padding:5px 10px;
 }
 
-/* .playlist-nav{
-    flex-basis:auto;
-    min-height: min-content;
+.playlist-nav ul:last-child{
+    flex: 1 1 auto !important;
     overflow-y: auto;
-} */
-
-.playlist-nav ul{
-    min-height: min-content;
-    overflow-y: auto;
-    height:100%;
 }
 
 .playlist-title{
