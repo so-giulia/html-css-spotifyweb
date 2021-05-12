@@ -17,6 +17,7 @@
 .justify-start{justify-content: flex-start;}
 .justify-end{justify-content: flex-end;}
 .justify-center{justify-content: center;}
+.justify-between{justify-content: space-between;}
 
 
 .align-start{align-items: flex-start;}
@@ -134,6 +135,8 @@
 .ptb-40{padding:40px 0;}
 
 .ph-10{padding:0 10px;} .ph-20{padding:0 20px;} .ph-30{padding:0 30px;}
+
+.pl-10p{padding-left:10%;}
 
 /* —————————————— Text Aligns —————————————— */
 

@@ -28,6 +28,11 @@ body{
 
 .caption{
     font-size:13px;
+    color:#717171;
+}
+
+h2, h3{
+    color:#fff;
 }
 
 .username{
@@ -55,7 +60,7 @@ aside nav ul li, .horizontal-nav ul li{
     line-height:30px;
 }
 
-li.active{
+li.active-v{
     border-left:3px solid #adff2f;
 }
 
@@ -144,6 +149,31 @@ li.active{
 .cta-btn a:visited, .cta-btn a:focus{
     text-decoration: none;
     color:#fff;
+}
+
+.horizontal-nav{
+    height:fit-content;
+}
+
+li.active-h{
+    border-bottom:3px solid #adff2f;
+
+}
+
+.card{
+    border:10px solid #141922;
+}
+
+.card:first-child{
+    border-left:0;
+}
+
+.card:last-child{
+    border-right:0;
+}
+
+.card img{
+    width:100%;
 }
 
 /* Footer */
