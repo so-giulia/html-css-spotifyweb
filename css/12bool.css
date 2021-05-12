@@ -10,10 +10,6 @@
 
 .flex{display: flex; flex-wrap: wrap;}
 
-/* —————————————— Display —————————————— */
-
-.b{display:block;} .ib{display:inline-block;} .i{display:inline;}
-
 /* —————————————— Flex alignments —————————————— */
 
 .flex-center{align-items: center; justify-content: center;}
@@ -32,11 +28,18 @@
 .align-content-center{align-content: center;}
 .align-content-between{align-content: space-between;}
 
+/* —————————————— Float —————————————— */
+
+.clearfix::after{content:''; display: table; clear: both;}
+.fleft{float:left;} .fright{float:right;}
+
+/* —————————————— Display —————————————— */
+
+.b{display:block;} .ib{display:inline-block;} .i{display:inline;}
+
 /* —————————————— Margins —————————————— */
 
-
 .m-10{margin:10px;}
-
 
 .mt-10{margin-top:10px;} .mt-20{margin-top:20px;} .mt-30{margin-top:30px;}
 .mt-40{margin-top:40px;} .mt-50{margin-top:50px;} .mt-60{margin-top:60px;}
@@ -91,6 +94,12 @@
 .prelative{ position:relative;}
 .pabsolute{ position:absolute;}
 .pfixed{ position:fixed;}
+
+
+/* ——————————————————————————— */
+/* ——————————————————————————— */
+/* ——————————————————————————— */
+/* ——————————————————————————— */
 
 
 /* —————————————— Mobile —————————————— */

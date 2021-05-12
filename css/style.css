@@ -1,0 +1,32 @@
+/* Debug - delete later */
+
+.debug main{
+    background-color: pink;
+    height:650px;
+}
+
+.debug footer{
+    background-color: black;
+    height:100px;
+}
+
+.debug aside{
+    height: 650px;
+    background-color: grey;
+}
+
+.debug .main-content{
+    height: 650px;
+    background-color: aqua;
+}
+
+
+/* Main structure */
+
+main aside{
+    width:17%;
+}
+
+.main-content{
+    width:calc(100% - 17%);
+}
