@@ -101,8 +101,8 @@ li.active{
 }
 
 .playlist-nav ul:last-child{
-    flex: 1 1 auto !important;
     overflow-y: auto;
+    height:30vh;
 }
 
 .playlist-title{
