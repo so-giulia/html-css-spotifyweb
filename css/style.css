@@ -186,8 +186,11 @@ li.active-v{
     width:100%;
 }
 
-li.active-h{
-    border-bottom:3px solid #adff2f;
+.active-h{
+    width:40px;
+    height:3px;
+    background-color: #adff2f;
+    margin:auto;
 
 }
 
