@@ -229,9 +229,16 @@ footer{
     color: #717171;
 }
 
-.controls i{
+.controls i, .operations i{
     color: #fff;
+}
+
+.controls i{
     margin:0 1%;
+}
+
+.operations i{
+    margin:0 10px;
 }
 
 .play-icon{
@@ -251,5 +258,13 @@ footer{
     height:4px;
     border-radius: 15px;
     background-color: #c1c1c1;
+}
+
+.volume-playbar{
+    width: 40%;
+}
+
+.volume-bar{
+    width:150px;
 }
 
