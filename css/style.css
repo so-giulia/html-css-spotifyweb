@@ -50,15 +50,17 @@ h2, h3{
 
 /* Aside */
 
-main aside, main .main-content{
+main aside, .main-content{
     height:calc(100vh - 100px);
 }
 
 main aside{
+    width:250px;
     background-color: #000;
 }
 
 main .main-content{
+    width:calc(100% - 250px);
     overflow-y: auto;
 }
 
@@ -155,7 +157,7 @@ li.active-v{
 }
 
 .cta-bar{
-    width:calc((100% / 12) * 10);
+    width:calc(100% - 250px);
     height:100px;
     background-color: rgba(0,0,0,0.5);
 
