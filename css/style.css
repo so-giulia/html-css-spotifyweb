@@ -223,6 +223,14 @@ footer{
     z-index:2;
 }
 
+.now-playing, .operations{
+    width:250px;
+}
+
+.music{
+    width:calc(100% - 500px);
+}
+
 .nowplaying-img{
     width:100%;
 }
@@ -243,12 +251,17 @@ footer{
     margin:0 10px;
 }
 
+.player{
+    width:400px;
+    margin:auto;
+}
+
 .play-icon{
     font-size: 24px;
 }
 
 .playbar{
-    width: 100%;
+    width:300px;
     height:4px;
     border-radius: 15px;
     background-color: #5a5a5a;
@@ -267,6 +280,6 @@ footer{
 }
 
 .volume-bar{
-    width:150px;
+    width:100px;
 }
 
