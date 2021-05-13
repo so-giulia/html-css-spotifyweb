@@ -20,209 +20,280 @@
 </head>
 
 <body class="debug">
+    
     <!-- main start -->
-    <main class="row">
-        <!-- side nav col start -->
-        <aside class="row row-vert col-sm-2 debug">         
-            <div class="container-fluid prelative">
-                <!-- logo start -->
-                <header class="row row-vert mb-15 p-15">
-                    <div id="logo"></div>
-                </header>
-                <!-- logo end -->
+    <main>
+        <div class="row">
+            <!-- sidebar start -->
+            <aside class="col-xs-2">
+                <div class="row row-vert justify-between sidebar-container shrink-0">
+                    
+                    <!-- upper sidebar start -->
+                    <div class="upper-sidebar">
+                        <div id="logo" class="pt-15 pl-15 mb-30">
+                            <img src="img/logo.svg" alt="Marchio e logotipo Spotify bianco">
+                        </div>
 
-                <!-- side nav start -->
-                <nav class="row row-vert main-nav mb-30">
-                    <ul class="strong">
-                        <li class="mb-10 active-v">
-                            <a href="#" class="row pl-special">
-                                <span class="nav-ico home-ico"></span>
-                                <span>Home</span>
+                        <!-- side nav start -->
+                        <nav class="main-nav mb-30">
+                            <ul class="strong">
+                                <li class="mb-10 active-v">
+                                    <a href="#" class="row pl-special">
+                                        <span class="nav-ico home-ico"></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+
+                                <li class="mb-10">
+                                    <a href="#" class="row pl-15">
+                                        <span class="nav-ico search-ico"></span>
+                                        <span>Cerca</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="row pl-15">
+                                        <span class="nav-ico lib-ico"></span>
+                                        <span>La tua libreria</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- side nav end -->
+
+                        <!-- playlist nav start -->
+                        <nav class="playlist-nav pl-15">
+                            <h3 class="playlist-title mb-20 strong loud">Playlist</h3>
+                            <a class="ib mb-20" href="#"> 
+                                <span class="ib nav-ico playlist-ico"></span>
+                                <span class="ib create-playlist strong">Crea Playlist</span>
                             </a>
-                        </li>
 
-                        <li class="mb-10">
-                            <a href="#" class="row pl-15">
-                                <span class="nav-ico search-ico"></span>
-                                <span>Cerca</span>
-                            </a>
-                        </li>
+                            <ul class="strong pb-50">
+                                <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                                <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                                <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                                <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                                <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                                <li class="mb-5"><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Ultima Playlist</a></li>
+                            </ul>
+                        </nav>
+                        <!-- playlist nav end -->
 
-                        <li>
-                            <a href="#" class="row pl-15">
-                                <span class="nav-ico lib-ico"></span>
-                                <span>La tua libreria</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- side nav end -->
-
-                <!-- playlist nav start -->
-                <nav class="playlist-nav row row-vert pl-15">
-                    <ul class="strong">
-                        <li class="playlist-title mb-10 loud">
-                            Playlist
-                        </li>
-
-                        <li class="mb-10">
-                            <a href="#"> 
-                                <span class="nav-ico playlist-ico"></span>
-                                <span class="create-playlist">Crea Playlist</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="strong pb-50">
-                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
-                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
-                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
-                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
-                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
-                        <li class="mb-5"><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Ultima Playlist</a></li>
-                    </ul>
-                </nav>
-                <!-- playlist nav end -->
-
-                <!-- cta + profile start -->
-                <section class="cta-profile row col-sm-2 ib pt-15 pb-15 pl-15 pfixed">
-                    <div class="row install pb-10 strong">
-                        <span class="nav-ico install-ico mr-10"></span>
-                        <span class="caption">
-                            <a href="#">
-                                Installa App
-                            </a>
-                        </span>
                     </div>
+                    <!-- upper sidebar end -->
 
-                    <div class="row profile pt-10 strong">
-                        <span class="nav-ico propic-ico mr-10"></span>
-                        <span class="username">John Doe</span>
+                    <!-- John doe + install start -->
+                    <div class="lower-sidebar p-15">
+                        
+                        <div class="row row-vert">
+                            <!-- install container start -->
+                            <div class="install-container row pb-15">
+                                <span class="nav-ico install-ico mr-10"></span>
+                                
+                                <span class="caption strong">
+                                    <a href="#">
+                                        Installa App
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- install container end -->
+
+                            <!-- profile container start -->
+                            <div class="profile-container row pt-15">
+                                <span class="nav-ico propic-ico mr-10"></span>
+                                <span class="username strong">John Doe</span>
+                            </div>
+                            <!-- profile container end -->
+                        </div>
+
                     </div>
-                </section>
-                <!-- cta + profile end -->
-           </div>            
-        </aside>
-        <!-- side nav col end -->
+                    <!-- John doe + install end -->
 
-        <!-- main content start -->
-        <div class="row main-content col-sm-10 align-content-start pt-120 pl-20 pr-50">
-            <!-- upgrade btn start -->
-            <section class="row col-xs-10 cta-bar pfixed justify-end align-center pr-15">
-                <span class="ib cta-btn pt-10 pr-30 pb-10 pl-30 strong loud">
-                    <a href="#">
-                        Effettua l'upgrade
-                    </a>
-                </span>
-            </section>
-            <!-- upgrade btn end -->
-
-            <!-- menu start -->
-            <nav class="row col-xs-12 horizontal-nav mb-40">
-                <ul class="row basis-100 justify-center strong loud">
-                    <li class="mh-1p active-h"><a href="#">in evidenza</a></li>
-                    <li class="mh-1p"><a href="#">podcast</a></li>
-                    <li class="mh-1p"><a href="#">classifiche</a></li>
-                    <li class="mh-1p"><a href="#">generi e mood</a></li>
-                    <li class="mh-1p"><a href="#">nuove uscite</a></li>
-                    <li class="mh-1p"><a href="#">scopri</a></li>
-                </ul>
-            </nav>
-            <!-- menu end -->
-            
-            <!-- recently played start -->
-            <section class="row col-xs-12">
-                <div class="row col-xs-12">
-                    <h2 class="strong">Ascoltati di recente</h2>
                 </div>
+            </aside>
+            <!-- sidebar end -->
+
+
+            <!-- right content start -->
+            <div class="main-content col-sm-10 pt-120 pl-20 pr-50">
+                <!-- upgrade btn start -->
+                <section class="row shrink-1 cta-bar pfixed justify-end align-center pr-15">
+                    <span class="ib cta-btn pt-10 pr-30 pb-10 pl-30 strong loud">
+                        <a href="#">
+                            Effettua l'upgrade
+                        </a>
+                    </span>
+                </section>
+                <!-- upgrade btn end -->
                 
-                <!-- plalylist container start -->
-                <div class="row col-xs-12 mt-30">
-                    <!-- plalylist grid start -->
-                    <div class="card txt-center row row-vert col-nested-md-2">
-                        <div class="img-container mb-20">
-                            <img src="img/metal_lifting.jpg" alt="Metal Playlist">
-                        </div>
-                        
-                        <div class="card-txt">
-                            <h3 class="strong">Heavy metal</h3>
-                            <p class="caption strong">Subtitle</p>
-                        </div>
+                <!-- MAIN CONTENT START -->
+                <div class="row align-content-start shrink-1 main-container">
+                    <!-- menu start -->
+                    <div class="h-nav-container col-nested-xs-12">
+                        <nav class="row horizontal-nav mb-40">
+                            <ul class="row justify-center strong loud">
+                                <li class="mh-1p active-h"><a href="#">in evidenza</a></li>
+                                <li class="mh-1p"><a href="#">podcast</a></li>
+                                <li class="mh-1p"><a href="#">classifiche</a></li>
+                                <li class="mh-1p"><a href="#">generi e mood</a></li>
+                                <li class="mh-1p"><a href="#">nuove uscite</a></li>
+                                <li class="mh-1p"><a href="#">scopri</a></li>
+                            </ul>
+                        </nav>
                     </div>
+                    <!-- menu end -->
 
-                    <div class="card txt-center row row-vert col-nested-md-2">
-                        <div class="img-container mb-20">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
-                        </div>
+                    <!-- recently played start -->
+                    <section class="col-nested-xs-12 mb-40">
+                        <h2 class="strong">Ascoltati di recente</h2>
                         
-                        <div class="card-txt">
-                            <h3 class="strong">Heavy metal</h3>
-                            <p class="caption strong">Subtitle</p>
-                        </div>
-                    </div>
+                        <!-- plalylist container start -->
+                        <div class="row mt-30">
+                            <!-- plalylist grid start -->
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container mb-20">
+                                    <img src="img/metal_lifting.jpg" alt="Metal Playlist">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Heavy metal</h3>
+                                    <p class="caption strong">Subtitle</p>
+                                </div>
+                            </div>
 
-                    <div class="card txt-center row row-vert col-nested-md-2">
-                        <div class="img-container mb-20">
-                            <img src="img/aquietplace.jpeg" alt="AQP">
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container mb-20">
+                                    <img src="img/stranger.jpeg" alt="Stranger Things">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Heavy metal</h3>
+                                    <p class="caption strong">Subtitle</p>
+                                </div>
+                            </div>
+
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container mb-20">
+                                    <img src="img/aquietplace.jpeg" alt="AQP">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Heavy metal</h3>
+                                    <p class="caption strong">Subtitle</p>
+                                </div>
+                            </div>
+
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container mb-20">
+                                    <img src="img/split.jpeg" alt="Split">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Heavy metal</h3>
+                                    <p class="caption strong">Subtitle</p>
+                                </div>
+                            </div>
+
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container mb-20">
+                                    <img src="img/cure.jpeg" alt="Cure">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Heavy metal</h3>
+                                    <p class="caption strong">Subtitle</p>
+                                </div>
+                            </div>
+
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container mb-20">
+                                    <img src="img/sinister.jpeg" alt="Sinister">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Heavy metal</h3>
+                                    <p class="caption strong">Subtitle</p>
+                                </div>
+                            </div>
+
+                            <!-- plalylist grid end -->
                         </div>
+                        <!-- plalylist container end -->
+                    </section>
+                    <!-- recently played end -->
+
+                    <!-- recently played start -->
+                    <section class="col-nested-xs-12 mb-40">
+                        <h2 class="strong mb-10">Creato per John Doe</h2>
+                        <p class="caption strong">Più ascolti, più saranno accurati i suggerimenti</p>
                         
-                        <div class="card-txt">
-                            <h3 class="strong">Heavy metal</h3>
-                            <p class="caption strong">Subtitle</p>
-                        </div>
-                    </div>
+                        <!-- for you playlists start -->
+                        <div class="row mt-30">
+                            <!-- for you playlists grid start -->
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container mb-20">
+                                    <img src="img/radar.jpeg" alt="Radar Playlist">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Release Radar</h3>
+                                </div>
+                            </div>
 
-                    <div class="card txt-center row row-vert col-nested-md-2">
-                        <div class="img-container mb-20">
-                            <img src="img/split.jpeg" alt="Split">
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container mb-20">
+                                    <img src="img/mixdaily.jpeg" alt="Daily Mix 1">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Daily Mix 1</h3>
+                                </div>
+                            </div>
+                            <!-- for you plalylist grid end -->
                         </div>
+                        <!-- for you playlists end -->
+                    </section>
+                    <!-- recently played end -->
+
+                    <!-- artists start -->
+                    <section class="col-nested-xs-12 mb-40">
+                        <h2 class="strong mb-10">Artisti più popolari</h2>
+                        <p class="caption strong">Più ascolti, più saranno accurati i suggerimenti</p>
                         
-                        <div class="card-txt">
-                            <h3 class="strong">Heavy metal</h3>
-                            <p class="caption strong">Subtitle</p>
-                        </div>
-                    </div>
+                        <!-- for you playlists start -->
+                        <div class="row mt-30">
+                            <!-- for you playlists grid start -->
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container artist mb-20">
+                                    <img src="img/youg.jpeg" alt="Lana del Rey Young">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Lana del Rey</h3>
+                                </div>
+                            </div>
 
-                    <div class="card txt-center row row-vert col-nested-md-2">
-                        <div class="img-container mb-20">
-                            <img src="img/cure.jpeg" alt="Cure">
+                            <div class="card txt-center col-nested-md-2">
+                                <div class="img-container artist mb-20">
+                                    <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                                </div>
+                                
+                                <div class="card-txt">
+                                    <h3 class="strong">Ludovico Einaudi</h3>
+                                </div>
+                            </div>
+                            <!-- for you plalylist grid end -->
                         </div>
-                        
-                        <div class="card-txt">
-                            <h3 class="strong">Heavy metal</h3>
-                            <p class="caption strong">Subtitle</p>
-                        </div>
-                    </div>
-
-                    <div class="card txt-center row row-vert col-nested-md-2">
-                        <div class="img-container mb-20">
-                            <img src="img/sinister.jpeg" alt="Sinister">
-                        </div>
-                        
-                        <div class="card-txt">
-                            <h3 class="strong">Heavy metal</h3>
-                            <p class="caption strong">Subtitle</p>
-                        </div>
-                    </div>
-
-                    <!-- plalylist grid end -->
-                 </div>
-                <!-- plalylist container end -->
-            </section>
-            <!-- recently played end -->
-
-            <!-- for you start -->
-            <section class="row col-xs-12">
-            </section>
-            <!-- for you end -->
-
-            <!-- popularstart -->
-            <section class="row col-xs-12">
-            </section>
-            <!-- popular end -->
+                        <!-- for you playlists end -->
+                    </section>
+                    <!-- artists end -->
+                </div>
+                <!-- MAIN CONTENT END -->
+            </div>
+            <!-- right content end -->
         </div>
-        <!-- main content end -->
     </main>
     <!-- main end -->
 
