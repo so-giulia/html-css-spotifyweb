@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!-- Framework -->
+    <link rel="stylesheet" href="css/12bool.css">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-     <!-- Framework -->
-     <link rel="stylesheet" href="css/12bool.css">
 
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
     <title>Spotify Web | Replica</title>
@@ -298,7 +301,70 @@
     <!-- main end -->
 
     <!-- foot start -->
-    <footer class="pfixed"></footer>
+    <footer class="pfixed">
+        <div class="row align-center">
+            <!-- listening to start -->
+            <div class="col-xs-2 pt-15 now-playing">
+                <div class="row align-center pl-15">
+
+                    <div class="col-nested-xs-3 pr-20">
+                        <img class="nowplaying-img" src="img/player_left.jpg" alt="Album name">
+                    </div>
+
+                    <div class="col-nested-xs-6">
+                        <div class="song-name">
+                            <p class="caption caption-white">Sinister</p>
+                            <p class="caption caption-small">Song name</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-nested-xs-3 txt-right">
+                        <i class="far fa-heart ib"></i>
+                        <i class="far fa-folder ib ml-10"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- listening to end -->
+
+            <!-- listening player start -->
+            <div class="col-xs-8">
+                <div class="row row-vert">
+                    <!-- controls start -->
+                    <div class="row controls justify-center align-center ptb-10">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far fa-play-circle play-icon"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <!-- controls end -->
+
+                    <!-- player start -->
+                    <div class="row player justify-center align-center">
+                        <div class="col-nested-xs-3 txt-right">
+                            <p class="caption caption-white strong pr-30">0:25</p>
+                        </div>
+
+                        <div class="col-nested-xs-4">
+                            <div class="playbar">
+                                <div class="playing"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-nested-xs-3">
+                            <p class="caption caption-white strong pl-30">4:35</p>
+                        </div>
+                    </div>
+                    <!-- player end -->
+                </div>
+            </div>
+            <!-- listening player end -->
+
+            <!-- operations start -->
+            <div class="col-xs-2 pt-15"></div>
+            <!-- operations end -->
+        </div>
+    </footer>
     <!-- foot end -->
 </body>
 </html>
