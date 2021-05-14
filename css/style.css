@@ -213,15 +213,11 @@ li.active-v{
 }
 
 .card{
-    padding:0.5%;
-}
-
-.card:first-child{
-    border-left:0;
+    padding-right:0.5%;
 }
 
 .card:last-child{
-    border-right:0;
+    padding-right:0;
 }
 
 .card img{
@@ -271,8 +267,12 @@ footer{
     z-index:2;
 }
 
+footer > .row{
+    height:100px;
+}
+
 .now-playing, .operations{
-    width:250px;
+    max-width:250px;
 }
 
 .music{
@@ -377,6 +377,28 @@ footer{
 
 /* —————— MEDIA QUERIES —————— */
 
+@media screen and (max-width:1140px){
+    .main-content {padding-right:30px;}
+}
+
+@media screen and (max-width:960px){
+    .card {padding:0 1% 20px 0;}
+    .player-container div:first-child .caption {padding-right: 10px;}
+    .player-container div:last-child .caption {padding-left: 10px;}
+    .player-container .playbar {width:90%;}
+    /* .controls i {margin: 0 5px;} */
+}
+
+@media screen and (max-width:768px){
+    .horizontal-nav ul li {margin-bottom: 15px;}
+    .horizontal-nav {margin-bottom: calc(40px - 15px);}
+    .music {flex-grow: 1;}
+    .volume-bar {width:70px;}
+    .operations i {margin: 0 5px;}
+    .now-playing, .operations {max-width: 200px;}
+    .card {padding:0 2.5% 15px 0;}
+}
+
 @media screen and (max-width:576px){
 
     /* ———— proportions ———— */
@@ -398,4 +420,27 @@ footer{
     .pl-special {padding-left: 15px;}
     .install-container {border:none; padding:0;}
     .install-ico {flex-basis: 22px;}
+}
+
+@media screen and (max-width:570px){
+
+    .controls i {margin: 0 6px;}
+    .now-playing, .operations {max-width: 150px;}
+    .hover-ico{margin-left:0;}
+    .player-container div:first-child .caption {padding-right: 5px;}
+    .player-container div:last-child .caption {padding-left: 5px;}
+    .volume-bar{width:50px;}
+}
+
+@media screen and (max-width:460px){
+
+    .controls i {margin: 0 3px;}
+    .controls i, .operations i {font-size:12px}
+    .play-icon::before {font-size:18px;}
+    .volume-bar{display: none;}
+    .now-playing > .row > div:last-child {display: none;}
+    .now-playing, .operations {max-width: 100px;}
+    .nowplaying-img {width: 230%;}
+    .now-playing > .row > .col-md-6 {margin-left: 10px;}
+    .player-container .caption{font-size:10px;}
 }
