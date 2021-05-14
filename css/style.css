@@ -106,12 +106,18 @@ li.active-v{
 .lib-ico {background:transparent url(../img/libreria.svg) scroll no-repeat center;}
 
 .playlist-ico::before{
-    content:'\002B';
-    color:#000;
-    font-size:20px;
+    content: '\002B';
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
     background-color: #a3a3a3;
-    padding:5px 10px;
-    margin:5px 0;
+    padding: 0.5px 8px;
+    margin: 5px 0;
+    vertical-align: middle;
+}
+
+.playlist-ico:hover::before{
+    background-color:#fff;
 }
 
 .playlist-nav a, .playlist-nav a:hover,
@@ -136,6 +142,7 @@ li.active-v{
 
 .create-playlist{
     font-size:16px;
+    vertical-align: middle;
 }
 
 .install-container{
@@ -202,7 +209,7 @@ li.active-v{
 }
 
 .card{
-    border:10px solid #141922;
+    padding:0.5%;
 }
 
 .card:first-child{
@@ -230,8 +237,9 @@ li.active-v{
 
 .card .img-container:hover > .img-layover{
     display: inline-block;
+    cursor: pointer;
     width: 100%;
-    height: 100%;
+    height: 98%;
     background-color:rgba(0,0,0,0.5);
 
     top: 0;
