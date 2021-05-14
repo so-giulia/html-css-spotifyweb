@@ -344,17 +344,18 @@ footer{
 .playbar:hover > .volume-playbar{
     background-color: #adff2f;
 }
-
+ 
 .circle{
     display:none;
-}
+} 
 
-.playing:hover .circle{
+.playbar:hover .circle{
     display:block;
     width:10px;
     height:10px;
     border-radius: 50%;
     background-color: #fff;
+    margin-left:-3px
 }
 
 .volume-playbar{
