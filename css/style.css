@@ -83,6 +83,10 @@ main .main-content{
     width:50%;
 }
 
+#logo-mobile{
+    display: none;
+}
+
 aside nav ul li, .horizontal-nav ul li{
     font-size:14px;
     line-height:30px;
@@ -371,3 +375,27 @@ footer{
     width:100px;
 }
 
+/* —————— MEDIA QUERIES —————— */
+
+@media screen and (max-width:576px){
+
+    /* ———— proportions ———— */
+    main aside {width:55px;}
+    main .main-content, .cta-bar {width: calc(100% - 55px);}
+
+    /* ———— display:none ———— */
+    .playlist-nav, .playlist-title,
+    .main-nav ul li a span:last-child,
+    .install-container .caption,
+    .profile-container .username, #logo {display: none;}
+
+    /* ———— aside ———— */
+    #logo-mobile{display:block;}
+    #logo-mobile img{width:65%;}
+    .main-nav {width:55px;}
+    .nav-ico {flex-basis:25px; height:25px; margin: 0 0 5px 0;}
+    li.active-v {border: none;}
+    .pl-special {padding-left: 15px;}
+    .install-container {border:none; padding:0;}
+    .install-ico {flex-basis: 22px;}
+}
