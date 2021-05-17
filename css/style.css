@@ -15,6 +15,7 @@ nav ul li a:focus, nav ul li a:visited,
 nav ul li a:hover, .lower-sidebar a:hover{
     text-decoration:none;
     color:#fff;
+
     transition:color ease 0.5s;
 }
 
@@ -137,6 +138,11 @@ li.active-v{
     transition: color ease 0.5s;
 }
 
+.playlist-nav a:hover .playlist-ico::before{
+    background-color:#fff;
+    transition: background-color ease 0.5s;
+}
+
 .playlist-nav{
     overflow:hidden;
     height:80%;
@@ -228,6 +234,14 @@ li.active-v{
 
 .artist img{
     border-radius: 50%;
+
+    opacity:1;
+    transition:opacity ease 0.5s;
+}
+
+.artist img:hover{
+    opacity:0.5;
+    transition:opacity ease 0.5s;
 }
 
 .img-layover{
@@ -350,6 +364,7 @@ footer > .row{
 .playbar:hover > .playing,
 .playbar:hover > .volume-playbar{
     background-color: #adff2f;
+
     transition: background-color ease 0.5s;
 }
  
@@ -360,7 +375,7 @@ footer > .row{
     height:10px;
     border-radius: 50%;
     background-color: #fff;
-    margin-left:-3px
+    margin-left:-3px;
 } 
 
 .playbar:hover .circle{
