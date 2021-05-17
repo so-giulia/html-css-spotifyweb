@@ -15,6 +15,7 @@ nav ul li a:focus, nav ul li a:visited,
 nav ul li a:hover, .lower-sidebar a:hover{
     text-decoration:none;
     color:#fff;
+    transition:color ease 0.5s;
 }
 
 /* Text */
@@ -122,6 +123,7 @@ li.active-v{
 
 .playlist-ico:hover::before{
     background-color:#fff;
+    transition: background-color ease 0.5s;
 }
 
 .playlist-nav a, .playlist-nav a:hover,
@@ -132,6 +134,7 @@ li.active-v{
 
 .playlist-nav a:hover{
     color:#fff;
+    transition: color ease 0.5s;
 }
 
 .playlist-nav{
@@ -290,6 +293,7 @@ footer > .row{
 
 .hover-ico:hover{
     color:#fff;
+    transition: color ease 0.5s;
 }
 
 .controls{
