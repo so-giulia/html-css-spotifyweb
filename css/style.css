@@ -348,10 +348,11 @@ footer > .row{
 .playbar:hover > .playing,
 .playbar:hover > .volume-playbar{
     background-color: #adff2f;
+    transition: background-color ease 0.5s;
 }
  
 .circle{
-    display:none;
+    opacity:0;
 
     width:10px;
     height:10px;
@@ -361,7 +362,9 @@ footer > .row{
 } 
 
 .playbar:hover .circle{
-    display:block;
+    opacity:1;
+    
+    transition: opacity ease 0.5s;
 }
 
 .volume-playbar{
