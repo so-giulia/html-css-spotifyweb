@@ -442,3 +442,8 @@ footer > .row{
     .now-playing > .row > .col-md-6 {margin-left: 10px;}
     .player-container .caption{font-size:10px;}
 }
+
+
+@media screen and (max-height:350px){
+    .cta-bar{display: none;}
+}
